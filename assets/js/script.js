@@ -74,10 +74,8 @@ let currentQuestion = 0;
 let score = 0;
 
 const questionText = document.getElementById("question-text");
-const answerButtons = document.querySelectorAll(".answer");
+const answerButton1 = document.getElementsByClassName("answer");
 const nextButton = document.getElementById("next-question");
-const resultContainer = document.getElementById("result-container");
-const scoreDisplay = document.getElementById("score");
 
 function loadQuestion() {
 
@@ -86,26 +84,8 @@ function loadQuestion() {
     questionArea.style.display = 'block';
 
     const current = questions[currentQuestion];
-    questionText.textContent = `Question ${currentQuestion + 1}: ${current.question}`;
-
-    for (let i = 0; i < answerButtons.length; i++) {
-        answerButtons[i].textContent = current.answers[i];
-        answerButtons[i].addEventListener("click", checkAnswer);
-    }
+    questionText.textContent = `${current.question}`;
 }
-
-function displayComedyQuestions() {
-    selectionArea.style.display = 'none';
-
-    questionArea.style.display = 'block';
-
-};
-
-function displayHorrorQuestions() {
-    selectionArea.style.display = 'none';
-
-    questionArea.style.display = 'block';
-};
 
 signUp2.addEventListener('click', signUpInput);
 function signUpInput() {
