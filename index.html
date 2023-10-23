@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Mega Movie Maniacs</title>
+</head>
+
+<body>
+    <main>
+        <!-- Welcome Section -->
+        <section id="welcome-area" class="">
+            <div>
+                <h1>Mega Movie Maniacs</h1>
+            </div>
+            <hr>
+            <div>
+                <p>Welcome to Mega Movie Maniacs, the ultimate movie club for all the cinephiles out there! We're here
+                    to celebrate our
+                    shared passion for the silver screen, and we're thrilled to have you join us on this cinematic
+                    journey.
+                <p>But before we dive into the world of films, we've got a little challenge for you.</p>
+                <p>Take one of our three quizes to put your movie knowledge to the
+                    test, and let's see if you're truly a mega movie maniac! So, grab your popcorn, and let's explore
+                    the enchanting realm
+                    of cinema together.</p>
+            </div>
+            <div>
+                <button aria-label="Let's Go " id="begin-game">Let's Go !</button>
+            </div>
+        </section>
+        <!-- Genre Selection -->
+        <section id="selection-area" class="hide">
+            <div id="select-title">
+                <h1>Select Quiz</h1>
+            </div>
+            <hr>
+            <div id="selection-buttons">
+                <button data-type="fantasy" class="select-buttons">Fantasy</button>
+                <button data-type="comedy" class="select-buttons">Comedy</button>
+                <button data-type="horror" class="select-buttons">Horror</button>
+            </div>
+        </section>
+        <!-- Question section-->
+        <section id="quiz" class="hide">
+            <div id="nav-bar-game">
+                <p id="back-home"><i class="fa-solid fa-arrow-left"></i> Back</p>
+                <span>x</span>
+            </div>
+            <div>
+                <h1 id="question-text" class="question-text"></h1>
+            </div>
+            <hr>
+            <div id="answers" class="answers">
+                <button class="answer"></button>
+                <button class="answer"></button>
+                <button class="answer"></button>
+                <button class="answer"></button>
+            </div>
+            <button id="next-question">Next Question<i id="arrow-right" class="fa-solid fa-arrow-right"></i></button>
+        </section>
+        <!-- Results section -->
+        <section id="results-area" class="hide">
+            <div>
+                <h1>You Scored!</h1>
+            </div>
+            <hr>
+            <div id="points-scored">
+                <h1><span id="score"></span> Points!</h1>
+            </div>
+            <div id="continue-buttons">
+                <button id="try-again-1">Try Again!</button>
+                <button id="sign-up-1">Sign Up</button>
+            </div>
+        </section>
+        <!-- Sign Up Section-->
+        <section id="signup-area" class="hide">
+            <form action="">
+                <h1>Become a Movie Maniac</h1>
+                <hr>
+                <div class="data-entry">
+                    <label for="name-field">Full Name</label>
+                    <input id="name-field" class="entry-label" type="text" name="full_name" required>
+                </div>
+                <div class="data-entry">
+                    <label for="email-field">Email Address</label>
+                    <input type="email" class="entry-label" id="email-field" name="email" required>
+                </div>
+                <div class="data-entry">
+                    <label for="age-field">Age</label>
+                    <select name="age" id="age-field" class="entry-label" required>
+                        <option value="under-18">Under 18</option>
+                        <option value="18-19">18-19</option>
+                        <option value="20s">20-29</option>
+                        <option value="30s">30-39</option>
+                        <option value="40s">40-49</option>
+                        <option value="50s">50-59</option>
+                        <option value="60+">60+</option>
+                    </select>
+                </div>
+                <div id="form-buttons">
+                    <button id="sign-up-2">Sign Up</button>
+                    <button id="try-again-2">Try Again!</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/e5efd06354.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/questions.js"></script>
+</body>
+
+</html>
