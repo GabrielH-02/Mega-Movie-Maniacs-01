@@ -90,6 +90,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #3b6355;
 }
 
 #arrow-right {
@@ -177,18 +178,25 @@ form>h1 {
 }
 
 @media screen and (min-width: 992px) {
+    
+    .answer:hover {
+        background-color: rgba(186, 147, 75, 0.507);
+        color: #fed73d;
+        border: 2px solid #fdefb5;
+    }
+
     button:hover {
         background-color: white;
         color: #6d2323;
     }
 
-    #choices :hover {
-        background-color: rgba(186, 147, 75, 0.507);
-        color: #fdefb5;
-        border: 2px solid #fdefb5;
-    }
-
     #back-home:hover {
         color: #a73939;
+    }
+
+    #next-question:hover {
+        background-color: white;
+        border-color: #3b6355;
+        color: #3b6355;
     }
 }

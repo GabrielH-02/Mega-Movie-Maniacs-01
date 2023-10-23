@@ -1,4 +1,4 @@
-let questions = [
+let fantasyQuestions = [
     {
         question: 'Who played the titular character in the 2015 live - action adaptation of "Cinderella" directed by Kenneth Branagh?',
         answers: ['Emma Watson','Lily James','Keira Knightley','Anne Hathaway'],
@@ -20,7 +20,7 @@ let questions = [
         correct: 1,
     },
     {
-        question: 'In the fantasy series Game of Thrones, Which house\'s motto is "Fire and Blooc" in the series',
+        question: 'In the fantasy series Game of Thrones, which house\'s motto is "Fire and Blood" in the series',
         answers: ['House Stark', 'House Lannister', 'House Targaryen', 'House Baratheon'],
         correct: 2,
     },
@@ -28,57 +28,57 @@ let questions = [
 
 let comedyQuestions = [
     {
-        question: 'From the series "Friends", which character is a paleontologist and often makes awkward jokes and puns',
-        choices: ['Rachel', 'Joey', 'Ross', 'Chandler'],
-        correctAnswer: 'Ross'
+        question: 'From the series "Friends", which character is a paleontologist and often makes awkward jokes and puns?',
+        answers: ['Rachel', 'Joey', 'Ross', 'Chandler'],
+        correct: 2,
     },
     {
         question: 'In the comedy film "Bridesmaids," who plays the character Annie, a woman whose life unravels as her best friend gets married?',
-        choices: ['Kristen Bell', 'Melissa McCarthy', 'Rebel Wilson', 'Kristen Wiig'],
-        correctAnswer: 'Kristen Wiig'
+        answers: ['Kristen Bell', 'Melissa McCarthy', 'Rebel Wilson', 'Kristen Wiig'],
+        correct: 3,
     },
     {
         question: 'In the series "The Big Bag Theory", what is the name of the university where most of the main characters work or study?',
-        choices: ['California Institute of Technology (Caltech)', 'Massachusetts Institute of Technology (MIT)', 'Princeton University', 'Stanford University'],
-        correctAnswer: 'California Institute of Technology (Caltech)'
+        answers: ['California Institute of Technology (Caltech)', 'Massachusetts Institute of Technology (MIT)', 'Princeton University', 'Stanford University'],
+        correct: 0,
     },
     {
         question: 'In "Mrs. Doubtfire," which actor plays the role of a divorced father who disguises himself as an elderly British nanny to spend time with his children?',
-        choices: ['Steve Martin', 'Eddie Murphy', 'Jim Carrey', 'Robin Williams'],
-        correctAnswer: 'Robin Williams'
+        answers: ['Steve Martin', 'Eddie Murphy', 'Jim Carrey', 'Robin Williams'],
+        correct: 3,
     },
     {
         question: 'What is the title of the 2004 comedy film featuring Lindsay Lohan as a teenager who switches bodies with her mother, played by Jamie Lee Curtis?',
-        choices: ['Freaky Friday', 'The Parent Trap', '13 Going on 30', 'Mean Girls'],
-        correctAnswer: 'Freaky Friday',
+        answers: ['Freaky Friday', 'The Parent Trap', '13 Going on 30', 'Mean Girls'],
+        correct: 0,
     },
 ];
 
 let horrorQuestions = [
     {
         question: 'In the classic 1973 horror film "The Exorcist," what is the name of the possessed young girl?',
-        a: ['Emily', 'Regan', 'Sarah', 'Linda'],
-        correctAnswer: 'Regan'
+        answers: ['Emily', 'Regan', 'Sarah', 'Linda'],
+        correct: 1,
     },
     {
         question: 'What is the name of the supernatural entity that terrorizes the children in Stephen King\'s "It" and its film adaptations?',
-        choices: ['Freddy Krueger', 'Jason Voorhees', 'Pennywise the Dancing Clown', 'Michael Myers'],
-        correctAnswer: 'Pennywise the Dancing Clown'
+        answers: ['Freddy Krueger', 'Jason Voorhees', 'Pennywise the Dancing Clown', 'Michael Myers'],
+        correct: 2,
     },
     {
         question: 'In the film series "Scream", what is the main catchphase used by the antagonist "Ghostface"?',
-        choices: ['Run!', 'What\'s your favorite scary movie?', 'I\'ll be back.', 'Turn around...'],
-        correctAnswer: 'What\'s your favorite scary movie?'
+        answers: ['Run!', 'What\'s your favorite scary movie?', 'I\'ll be back.', 'Turn around...'],
+        correct: 1,
     },
     {
         question: 'In the film "The Silence of the Lambs," who plays the brilliant but insane serial killer, Hannibal Lecter?',
-        choices: ['Anthony Hopkins', 'Jack Nicholson', 'Robert De Niro', 'Kevin Spacey'],
-        correctAnswer: 'Anthony Hopkins'
+        answers: ['Anthony Hopkins', 'Jack Nicholson', 'Robert De Niro', 'Kevin Spacey'],
+        correct: 0,
     },
     {
         question: 'In the horror film "The Shining," based on Stephen King\'s novel, what is the name of the remote and haunted hotel where the events take place?',
-        choices: ['The Overlook Hotel', 'The Bates Motel', 'The Amityville House', 'The Blackwood Manor'],
-        correctAnswer: 'The Overlook Hotel'
+        answers: ['The Overlook Hotel', 'The Bates Motel', 'The Amityville House', 'The Blackwood Manor'],
+        correct: 0,
     },
 ];
 
