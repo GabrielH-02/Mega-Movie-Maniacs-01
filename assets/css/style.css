@@ -86,12 +86,6 @@ button {
     margin: 3% 0;
 }
 
-#next-question {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #3b6355;
-}
 
 #arrow-right {
     margin-left: 10px;
@@ -192,11 +186,5 @@ form>h1 {
 
     #back-home:hover {
         color: #a73939;
-    }
-
-    #next-question:hover {
-        background-color: white;
-        border-color: #3b6355;
-        color: #3b6355;
     }
 }

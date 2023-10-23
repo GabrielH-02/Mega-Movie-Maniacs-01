@@ -81,10 +81,11 @@ function runQuiz(quizType) {
 
 /* General Variables for the question section of code */ 
 let currentQuestion = 0;
+let score = 0; 
 
 const questionText = document.getElementById("question-text");
 const answerButtons = document.getElementsByClassName("answer");
-const nextButton = document.getElementById("next-question");
+const scoreDisplay = document.getElementById("score");
 
 // functions the questions for fantasy questions
 function fantasyQuiz() {
@@ -93,13 +94,32 @@ function fantasyQuiz() {
 
     quizArea.style.display = 'block';
 
-    const current = fantasyQuestions[currentQuestion];
+    let current = fantasyQuestions[currentQuestion];
     questionText.textContent = `${current.question}`;
 
     for (let i = 0; i < answerButtons.length; i++) {
-        const button = answerButtons[i];
-        const answerText = current.answers[i];
+        let button = answerButtons[i];
+        let answerText = current.answers[i];
         button.textContent = answerText;
+        button.addEventListener("click", checkAnswer1);
+    }
+}
+
+// fantasy questions checks answers
+function checkAnswer1(event) {
+    let selectedAnswer = event.target.textContent;
+    let correctAnswer = fantasyQuestions[currentQuestion].answers[fantasyQuestions[currentQuestion].correct];
+
+    if (selectedAnswer === correctAnswer) {
+        score++;
+    }
+
+    currentQuestion++;
+
+    if (currentQuestion < fantasyQuestions.length) {
+        fantasyQuiz();
+    } else {
+        showResult();
     }
 }
 
@@ -110,13 +130,32 @@ function comedyQuiz() {
 
     quizArea.style.display = 'block';
 
-    const current = comedyQuestions[currentQuestion];
+    let current = comedyQuestions[currentQuestion];
     questionText.textContent = `${current.question}`;
 
     for (let i = 0; i < answerButtons.length; i++) {
-        const button = answerButtons[i];
-        const answerText = current.answers[i];
+        let button = answerButtons[i];
+        let answerText = current.answers[i];
         button.textContent = answerText;
+        button.addEventListener("click", checkAnswer2);
+    }
+}
+
+// comedy questions checks answers
+function checkAnswer2(event) {
+    let selectedAnswer = event.target.textContent;
+    let correctAnswer = comedyQuestions[currentQuestion].answers[comedyQuestions[currentQuestion].correct];
+
+    if (selectedAnswer === correctAnswer) {
+        score++;
+    }
+
+    currentQuestion++;
+
+    if (currentQuestion < comedyQuestions.length) {
+        comedyQuiz();
+    } else {
+        showResult();
     }
 }
 
@@ -127,14 +166,40 @@ function horrorQuiz() {
 
     quizArea.style.display = 'block';
 
-    const current = horrorQuestions[currentQuestion];
+    let current = horrorQuestions[currentQuestion];
     questionText.textContent = `${current.question}`;
 
     for (let i = 0; i < answerButtons.length; i++) {
-        const button = answerButtons[i];
-        const answerText = current.answers[i];
+        let button = answerButtons[i];
+        let answerText = current.answers[i];
         button.textContent = answerText;
+        button.addEventListener("click", checkAnswer3);
     }
+}
+
+// horror questions checks answers
+function checkAnswer3(event) {
+    let selectedAnswer = event.target.textContent;
+    let correctAnswer = horrorQuestions[currentQuestion].answers[horrorQuestions[currentQuestion].correct];
+
+    if (selectedAnswer === correctAnswer) {
+        score++;
+    }
+
+    currentQuestion++;
+
+    if (currentQuestion < horrorQuestions.length) {
+        horrorQuiz();
+    } else {
+        showResult();
+    }
+}
+
+// shows the amount of point gained in result area
+function showResult() {
+    quizArea.style.display = "none";
+    scoreDisplay.textContent = score;
+    resultsArea.style.display = "block";
 }
 
 // logs users data, and creates alerts on fill in inputs
