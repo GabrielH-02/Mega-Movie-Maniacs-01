@@ -2,7 +2,7 @@
 
 const welcomeArea = document.getElementById('welcome-area');
 const selectionArea = document.getElementById('selection-area');
-const questionArea = document.getElementById('quiz');
+const questionArea = document.getElementById('quiz-container');
 const resultsArea = document.getElementById('results-area');
 const signUpArea = document.getElementById('signup-area');
 
@@ -63,11 +63,7 @@ document.addEventListener('click', function () {
 function runQuiz(quizType) {
 
     if (quizType === 'fantasy') {
-        displayFantasyQuestions();
-    } else if (quizType === 'comedy') {
-        displayComedyQuestions();
-    } else if (quizType === 'horror') {
-        displayHorrorQuestions();
+        loadQuestion();
     } else {
         alert(`Unknown game type: ${gameType}`);
         throw `Unknown game type: ${gameType}. Aborting!`;
@@ -77,24 +73,26 @@ function runQuiz(quizType) {
 let currentQuestion = 0;
 let score = 0;
 
-const questionStatement = document.getElementById('question-text');
-const answersStatements = document.getElementsByClassName('answer');
-const nextQ = document.getElementById('next-question');
+const questionText = document.getElementById("question-text");
+const answerButtons = document.querySelectorAll(".answer");
+const nextButton = document.getElementById("next-question");
+const resultContainer = document.getElementById("result-container");
+const scoreDisplay = document.getElementById("score");
 
-function displayFantasyQuestions() {
+function loadQuestion() {
 
-    window.alert(`You've eneter fantasy`);
+    selectionArea.style.display = 'none';
 
-    const current = fantasyQuestions[currentQuestion];
-    questionStatement.textContent = `${current.question}`;
+    questionArea.style.display = 'block';
 
-    for (let i = 0; i < answersStatements.length; i++) {
-        answersStatements[i].textContent = curren.answers[i];
-        answersStatements[i].addEventListener('click', checkAnswer);
+    const current = questions[currentQuestion];
+    questionText.textContent = `Question ${currentQuestion + 1}: ${current.question}`;
+
+    for (let i = 0; i < answerButtons.length; i++) {
+        answerButtons[i].textContent = current.answers[i];
+        answerButtons[i].addEventListener("click", checkAnswer);
     }
-
-};
-
+}
 
 function displayComedyQuestions() {
     selectionArea.style.display = 'none';

@@ -1,28 +1,28 @@
-let fantasyQuestions = [
+let questions = [
     {
         question: 'Who played the titular character in the 2015 live - action adaptation of "Cinderella" directed by Kenneth Branagh?',
-        choices: ['Emma Watson', 'Lily James', 'Keira Knightley', 'Anne Hathaway'],
-        correctAnswer: 'Lily James'
+        answers: ['Emma Watson','Lily James','Keira Knightley','Anne Hathaway'],
+        correct: 1,
     },
     {
         question: 'What is the name of the fantasy realm in Neil Gaiman\'s novel and the subsequent film adaptation "Stardust"?',
-        choices: ['Elara', 'Wall', 'Faerieland', 'Stormhold'],
-        correctAnswer: 'Stormhold'
+        answers: ['Elara', 'Wall', 'Faerieland', 'Stormhold'],
+        correct: 3,
     },
     {
         question: 'Who played the iconic role of Gandalf the Grey in "The Lord of the Rings" film series?',
-        choices: ['Ian McKellen', 'Sean Connery', 'Richard Harris', 'Christopher Lee'],
-        correctAnswer: 'Ian McKellen'
+        answers: ['Ian McKellen', 'Sean Connery', 'Richard Harris', 'Christopher Lee'],
+        correct: 0,
     },
     {
         question: 'Which of these fantasy film series DID NOT feature a score by the composer "John Williams"?',
-        choices: ['Harry Potter', 'Lord of the Rings', 'Jurassic Park', 'Star Wars'],
-        correctAnswer: 'Lord of the Rings'
+        answers: ['Harry Potter', 'Lord of the Rings', 'Jurassic Park', 'Star Wars'],
+        correct: 1,
     },
     {
         question: 'In the fantasy series Game of Thrones, Which house\'s motto is "Fire and Blooc" in the series',
-        choices: ['House Stark', 'House Lannister', 'House Targaryen', 'House Baratheon'],
-        correctAnswer: 'House Targaryen'
+        answers: ['House Stark', 'House Lannister', 'House Targaryen', 'House Baratheon'],
+        correct: 2,
     },
 ];
 

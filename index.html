@@ -49,17 +49,16 @@
                 <button data-type="horror" class="select-buttons">Horror</button>
             </div>
         </section>
+
         <!-- Question section-->
-        <section id="quiz" class="hide">
+        <section id="quiz-container" class="hide">
             <div id="nav-bar-game">
                 <p id="back-home"><i class="fa-solid fa-arrow-left"></i> Back</p>
                 <span>x</span>
             </div>
-            <div>
-                <h1 id="question-text" class="question-text"></h1>
-            </div>
-            <hr>
-            <div id="answers" class="answers">
+            <div id="question-container">
+                <p id="question-text"></p>
+                <hr>
                 <button class="answer"></button>
                 <button class="answer"></button>
                 <button class="answer"></button>
@@ -67,6 +66,7 @@
             </div>
             <button id="next-question">Next Question<i id="arrow-right" class="fa-solid fa-arrow-right"></i></button>
         </section>
+
         <!-- Results section -->
         <section id="results-area" class="hide">
             <div>
