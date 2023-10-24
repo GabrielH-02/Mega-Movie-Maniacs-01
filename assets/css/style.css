@@ -42,6 +42,13 @@ h1 {
     padding: 5%;
 }
 
+h2 {
+    font-size: 120%;
+        font-family: 'Montserrat', sans-serif;
+        color: #cdcdcd;
+        padding: 5%;
+}
+
 p {
     font-size: 70%;
     font-family: 'Montserrat', sans-serif;
