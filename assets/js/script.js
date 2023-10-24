@@ -51,7 +51,7 @@ signUp1.addEventListener('click', function () {
 
 /* Selection section */
 
-// determines what quiz function runs based on the datatype clicked on
+// adds an event listener to the selction buttons
 document.addEventListener('click', function () {
     let selectButtons = document.getElementsByClassName('select-buttons');
 
@@ -65,7 +65,7 @@ document.addEventListener('click', function () {
 
 /* Quiz section */
 
-// Runs the quiz which quiz type is clicked on
+// determines what quiz function runs based on the datatype clicked on
 function runQuiz(quizType) {
 
     if (quizType === 'fantasy') {
