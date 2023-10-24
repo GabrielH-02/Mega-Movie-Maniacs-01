@@ -38,7 +38,7 @@ tryAgain1.addEventListener('click', function () {
 // Refreshes to the welcome section from the sign-up area
 const tryAgain2 = document.getElementById('try-again-2');
 tryAgain2.addEventListener('click', function () {
-   location.reload(true);
+    location.reload(true);
 });
 
 // Goes to the sign area from the results area
@@ -71,17 +71,17 @@ function runQuiz(quizType) {
     if (quizType === 'fantasy') {
         fantasyQuiz();
     } else if (quizType === 'comedy') {
-        comedyQuiz()
+        comedyQuiz();
     } else if (quizType === 'horror') {
-        horrorQuiz()
+        horrorQuiz();
     } else {
         window.alert(`Unknown game type: ${quizType}`);
     }
-};
+}
 
-/* General Variables for the question section of code */ 
+/* General Variables for the question section of code */
 let currentQuestion = 0;
-let score = 0; 
+let score = 0;
 
 const questionText = document.getElementById("question-text");
 const answerButtons = document.getElementsByClassName("answer");
