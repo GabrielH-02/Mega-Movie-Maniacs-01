@@ -49,7 +49,7 @@ __The Style__
 
 ![sign-up-area-image](documentation/5-signup-area.png)
 
-![sign-up-alert-1](documentation/signup-alert-2.png)
+![sign-up-alert-1](documentation/signup-alert-1.png)
 
 ![sign-up-alert-2](documentation/signup-alert-2.png)
 
